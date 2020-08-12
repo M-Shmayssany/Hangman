@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+canvas {
+  background-color: #7b6bc2;
+}
+
+#clavier {
+  position: absolute;
+  display: block;
+  width: 45%;
+  height: 200px;
+  top: 300px;
+  left: 100px;
+  align-self: center;
+}
+
+#clavier button {
+  align-items: center;
+  width: 25px;
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */

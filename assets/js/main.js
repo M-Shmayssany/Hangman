@@ -1,12 +1,7 @@
-
-
-Promise.all([
-    fetch('../assets/words.txt').then(x => x.text())
-    ]).then(([listResp]) => { 
         let canvas = document.querySelector('canvas');
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;   
-        let wordsArray = listResp.split('\n');
+        //let wordsArray = listResp.split('\n');
         let word = wordsArray[random(wordsArray.length)];
         word = word.toUpperCase();
         console.log(word);
@@ -237,4 +232,3 @@ Promise.all([
             
             setGame();
         });
-});

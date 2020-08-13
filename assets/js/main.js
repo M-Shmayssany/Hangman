@@ -1,7 +1,6 @@
         let canvas = document.querySelector('canvas');
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;   
-        //let wordsArray = listResp.split('\n');
         let word = wordsArray[random(wordsArray.length)];
         word = word.toUpperCase();
         console.log(word);
@@ -215,6 +214,7 @@
             });
         });
         document.getElementById("start").addEventListener('click',()=>{
+            word = wordsArray[random(wordsArray.length)];
             bubbles = [];
             tryLetters = [];
             actionError = 0;
